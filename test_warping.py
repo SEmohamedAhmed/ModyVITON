@@ -2073,7 +2073,7 @@ def run_model():
 
                 cloth_id = data['color_path'][bb].split('/')[-1]
                 person_id = data['img_path'][bb].split('/')[-1]
-                save_path = 'sample/' + opt.name + '/' + c_type + '___' + person_id + '___' + cloth_id[:-4] + '.png'
+                save_path = c_type + '___' + person_id + '___' + cloth_id[:-4] + '.png'
                 cv2.imwrite(save_path, bgr)
 
 
