@@ -221,7 +221,7 @@ class BaseOptions():
         self.parser.add_argument('--nThreads', default=1, type=int, help='# threads for loading data')
         self.parser.add_argument('--max_dataset_size', type=int, default=float("inf"),
                                  help='Maximum number of samples allowed per dataset. If the dataset directory contains more than max_dataset_size, only a subset is loaded.')
-        self.parser.add_argument('--warproot', type=str, default='/kaggle/output')
+        self.parser.add_argument('--warproot', type=str, default='/kaggle/working')
 
         # for displays
         self.parser.add_argument('--display_winsize', type=int, default=512, help='display window size')
