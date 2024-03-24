@@ -215,7 +215,7 @@ class BaseOptions():
         self.parser.add_argument('--output_nc', type=int, default=3, help='# of output image channels')
 
         # for setting inputs
-        self.parser.add_argument('--dataroot', type=str, default='/kaggle/input/vitonhdmody')
+        self.parser.add_argument('--dataroot', type=str, default='/kaggle/input/gp-vton-dataset/VITON-HD/VITON-HD') # for fastAPI application use /kaggle/input/vitonhdmody 
         # scale_width was removed none is written instead
         self.parser.add_argument('--resize_or_crop', type=str, default='none',
                                  help='scaling and cropping of images at load time [resize_and_crop|crop|scale_width|scale_width_and_crop]')
@@ -247,7 +247,7 @@ class BaseOptions():
                                  help='number of epochs that we only train the outmost local enhancer')
         self.parser.add_argument('--tv_weight', type=float, default=0.1, help='weight for TV loss')
 
-        self.parser.add_argument('--image_pairs_txt', type=str, default='/kaggle/input/vitonhdmody/inference.txt')
+        self.parser.add_argument('--image_pairs_txt', type=str, default='/kaggle/input/gp-vton-dataset/VITON-HD/VITON-HD/test_pairs_paired_1018.txt') # for fastAPI application use /kaggle/input/vitonhdmody/inference.txt
 
         self.initialized = True
 
