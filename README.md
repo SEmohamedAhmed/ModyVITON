@@ -1,5 +1,5 @@
 # Project Name
-ModyVITON
+Mody VTON
 
 ## Introduction
 
